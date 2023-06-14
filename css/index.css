@@ -2,4 +2,10 @@ h1 {
     margin-top: 20px;
     text-align: center;
   }
-  
+.container {
+    margin: 150px;
+}
+.img-fluid{
+  width: 300px;
+  height: 300px;
+}
