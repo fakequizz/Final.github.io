@@ -5,3 +5,7 @@ h1 {
 .container {
     margin: 150px;
 }
+.img-fluid{
+  width: 300px;
+  height: 300px;
+}
