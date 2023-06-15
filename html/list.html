@@ -2,50 +2,401 @@
 <html>
 <head>
 	<title>List Of Restaurants</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/list.css">
-</head>
-<body>
-    <!DOCTYPE html>
-<html>
-<head>
-	<title>List Of Restaurants</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/list.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">RestoHub</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Header and Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 50px ; margin-left: 150px; margin-right: 150px;margin-top: 20px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../img/whitelogo.png" style="width: 100px; height: 75px;" alt="RestoHub Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Restaurants</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Company
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li><a class="dropdown-item" href="#">About Us</a></li>
-                  <li><a class="dropdown-item" href="#">Contact us</a></li>
-                </ul>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Contact us</a></li>
+                    </ul>
+                </li>
             </ul>
-          </div>
         </div>
-      </nav>
+    </div>
+  </nav>
+  <!-- End Header and Navbar -->
+
+  <!-- List Of Restaurants -->
+      <section id="menu" class="menu">
+        <div class="container" data-aos="fade-up">
+   
+          <div class="section-header">
+            <p>Check our list of<span> Restaurants</span></p>
+          </div>
+  
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  <!-- Europa -->
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#europian">
+                <h4>Europian</h4>
+              </a>
+            </li>
+  <!-- Italy -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#italian">
+                <h4>Italian</h4>
+              </a>
+  <!-- France -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#france">
+                <h4>France</h4>
+              </a>
+            </li>
+  <!-- Asia -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#asian">
+                <h4>Asian</h4>
+              </a>
+            </li>
+  
+          </ul>
+  
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+          <!-- Europian food and list -->
+            <div class="tab-pane fade active show" id="europian">
+  
+              <div class="tab-header text-center">
+                <p>List Of Restaurants</p>
+                <h3>Europian food</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/Churrasco.jpg" class="glightbox"><img src="../img/kitchen/European/Churrasco.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Churrasco</h4>
+                  <p class="description">
+                    Savor exquisite dry-matured steaks at this Restobar, aged to perfection in a specialized chamber.
+                  </p>
+                  <p class="price">
+                    Average bill: 5000-8000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/local pub.jpg" class="glightbox"><img src="../img/kitchen/European/local pub.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Local Pub</h4>
+                  <p class="description">
+                    Local Pub is a pub offering exclusive alcoholic beverages from around the world and a menu of European cuisine.
+                  </p>
+                  <p class="price">
+                    Average bill: 8000-10000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/Millionaire.jpg" class="glightbox"><img src="../img/kitchen/European/Millionaire.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Millionaire</h4>
+                  <p class="description">
+                    We recommend you to look into the karaoke “Millionaire” today and enjoy the luxury of the whole atmosphere and excellent sound quality.
+                  </p>
+                  <p class="price">
+                    Average bill: 20000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/more more.jpeg" class="glightbox"><img src="../img/kitchen/European/more more.jpeg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Море Море</h4>
+                  <p class="description">
+                    Discover "Море Море" Restaurant, offering a delightful fusion of Mediterranean and Asian cuisine.
+                  </p>
+                  <p class="price">
+                    Average bill: 15000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/once.jpg" class="glightbox"><img src="../img/kitchen/European/once.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Once</h4>
+                  <p class="description">
+                    ONCE is an ideal place for a luxurious holiday, enjoying delicious dishes and a fabulous atmosphere.
+                  </p>
+                  <p class="price">
+                    Average bill: 10000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/European/Eva Winecafe.jpg" class="glightbox"><img src="../img/kitchen/European/Eva Winecafe.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Eva Winecafe</h4>
+                  <p class="description">
+                    The Eva Wine cafe Wine Shop restaurant is a cozy place where you can taste the best wines and delicious dishes for real gourmets.
+                  </p>
+                  <p class="price">
+                    Average bill: 7000&#8376; per person
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <!-- Italian food and list -->
+            <div class="tab-pane fade" id="italian">
+
+              <div class="tab-header text-center">
+                <p>List of Restaurants</p>
+                <h3>Italian food</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/Del Papa.jpg" class="glightbox"><img src="../img/kitchen/Italian/Del Papa.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Del Papa</h4>
+                  <p class="description">
+                    Del Papa is a cozy city restaurant, where it is especially pleasant to spend time with loved ones, enjoying real Italian cuisine.
+                  </p>
+                  <p class="price">
+                    Average bill: 5000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/iL FORNO.jpg" class="glightbox"><img src="../img/kitchen/Italian/iL FORNO.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>iL FORNO</h4>
+                  <p class="description">
+                    We masterfully prepare pizza, pasta, grilled meat and fish, delicious desserts and other traditional Italian dishes.
+                  </p>
+                  <p class="price">
+                    Average bill: 12000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/La Bottega.jpg" class="glightbox"><img src="../img/kitchen/Italian/La Bottega.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>La Bottega</h4>
+                  <p class="description">
+                    La Bottega is the best family restaurant in the city with its favorite Italian cuisine, good traditions and always a warm welcome
+                  </p>
+                  <p class="price">
+                    Average bill: 7000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/La Mia Piazza.jpg" class="glightbox"><img src="../img/kitchen/Italian/La Mia Piazza.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>La Mia Piazza</h4>
+                  <p class="description">
+                    A very atmospheric restaurant will take you to the streets of Italy. Every detail in the interior is thought out here.
+                  </p>
+                  <p class="price">
+                    Average bill: 8000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/Salone del Gusto.jpg" class="glightbox"><img src="../img/kitchen/Italian/Salone del Gusto.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Salone del Gusto</h4>
+                  <p class="description">
+                    Experience Salone del Gusto's grandeur with exquisite dining, wine, cigars, and culinary delights.
+                  </p>
+                  <p class="price">
+                    Average bill: 15000&#8376; per person
+                  </p>
+                </div>  
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Italian/Pane & Vino.jpg" class="glightbox"><img src="../img/kitchen/Italian/Pane & Vino.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Pane & Vino</h4>
+                  <p class="description">
+                    The skill of our Italian chef from the first courses to desserts, everything carries the taste and aroma of Italian culinary traditions.
+                  </p>
+                  <p class="price">
+                    Average bill: 8000&#8376; per person
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- French food and list -->
+            <div class="tab-pane fade" id="france">
+
+              <div class="tab-header text-center">
+                <p>list of Restaurants</p>
+                <h3>France food</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/De Paris.jpg" class="glightbox"><img src="../img/kitchen/France/De Paris.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>De Paris</h4>
+                  <p class="description">
+                    "De PARIS" is the signature restaurant of hotel "the ONE" with a renowned chef. It offers an authentic culinary experience for guests and city residents to savor quality ingredients.
+                  </p>
+                  <p class="price">
+                    Average bill: 13000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/Ma Famille.jpg" class="glightbox"><img src="../img/kitchen/France/Ma Famille.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Ma Famille</h4>
+                  <p class="description">
+                    Discover Ma Famille, the French coffee shop-bakery, offering the freshest pastries. Indulge in authentic baguettes, croissants, fresh fruit pies with high-quality
+                  </p>
+                  <p class="price">
+                    Average bill: 3000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/Cabernet.jpg" class="glightbox"><img src="../img/kitchen/France/Cabernet.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Cabernet</h4>
+                  <p class="description">
+                    The face of the Cabernet Club is a chef from Serbia, Dalibor Pljevalcic.He led the kitchen and crafted the menu at the opening of Cabernet Club.
+                  </p>
+                  <p class="price">
+                    Average bill: 10000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/Lou Lou.jpg" class="glightbox"><img src="../img/kitchen/France/Lou Lou.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Lou Lou</h4>
+                  <p class="description">
+                    Lou Lou is a little France in the very center of Astana. All the best that we know and imagine about the country of love and gastronomy are intertwined here.
+                  </p>
+                  <p class="price">
+                    Average bill: 25000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/La Riviere.jpg" class="glightbox"><img src="../img/kitchen/France/La Riviere.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>La Riviere</h4>
+                  <p class="description">
+                    The chef Oreste Mancini is resting here with dishes of haute cuisine. Here you can enjoy not only the atmosphere of the chic The St. Regis, Mediterranean cuisine.
+                  </p>
+                  <p class="price">
+                    Average bill: 20000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/France/La Belle.jpg" class="glightbox"><img src="../img/kitchen/France/La Belle.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>La Belle</h4>
+                  <p class="description">
+                    "La Belle Restaurant & terrace" is one of the most popular establishments in the capital. Each zone identifies interior innovations and genuine style.
+                  </p>
+                  <p class="price">
+                    Average bill: 15000&#8376; per person
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Asian food and list -->
+            <div class="tab-pane fade" id="asian">
+              <div class="tab-header text-center">
+                <p>List of Restaurants</p>
+                <h3>Asian food</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/Asia Rooms.jpg" class="glightbox"><img src="../img/kitchen/Asian/Asia Rooms.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Asia Rooms</h4>
+                  <p class="description">
+                    Astana Asia Room offers a great ambiance, delectable cuisine, top-notch facilities, and excellent service.
+                  </p>
+                  <p class="price">
+                    Average bill: 10000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/Gentlemen’s Quality Bar Asia.jpg" class="glightbox"><img src="../img/kitchen/Asian/Gentlemen’s Quality Bar Asia.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Gentlemen’s Quality Bar Asia</h4>
+                  <p class="description">
+                    GENTLEMEN'S QUALITY BAR ASIA promotes a culture of consuming both delicious and nutritious food.
+                  </p>
+                  <p class="price">
+                    Average bill: 9000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/Korean House Karaoke.jpg" class="glightbox"><img src="../img/kitchen/Asian/Korean House Karaoke.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Korean House Karaoke</h4>
+                  <p class="description">
+                    Korean House Astana welcomes both enthusiasts and connoisseurs of Korean, Japanese, and Pan-Asian cuisine.
+                  </p>
+                  <p class="price">
+                    Average bill: 9000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/Tofu.jpg" class="glightbox"><img src="../img/kitchen/Asian/Tofu.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Tofu</h4>
+                  <p class="description">
+                    The menu of the Tofu Astana restaurant consists of a large number of dishes of Korean, Pan-Asian, Japanese and European cuisine
+                  </p>
+                  <p class="price">
+                    Average bill: 7000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/9fe62ff6c1a1df278291d9a15a8db0e5.jpg" class="glightbox"><img src="../img/kitchen/Asian/9fe62ff6c1a1df278291d9a15a8db0e5.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Korean BBQ</h4>
+                  <p class="description">
+                    Korean BBQ, a culinary mainstay for 20 years, offers an extensive menu of delicious Korean dishes on the right bank of the capital.
+                  </p>
+                  <p class="price">
+                    Average bill: 5000&#8376; per person
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 menu-item">
+                  <a href="../img/kitchen/Asian/Yakitoria.jpg" class="glightbox"><img src="../img/kitchen/Asian/Yakitoria.jpg" class="menu-img img-fluid" alt=""></a>
+                  <h4>Yakitoria</h4>
+                  <p class="description">
+                    Yakitoria Astana excels in offering the finest Japanese cuisine in the city, with an authentic menu.
+                  </p>
+                  <p class="price">
+                    Average bill: 7000&#8376; per person
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
       
   <script src="../js/list.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
