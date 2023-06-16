@@ -35,3 +35,39 @@ function generatePromoCode() {
   
   
   
+var song = document.getElementsByTagName('audio')[0];
+var played = false;
+var tillPlayed = getCookie('timePlayed');
+
+function toggleMute() {
+  if (song.muted) {
+    song.muted = false;
+    document.getElementById('muteButton').innerText = 'Mute';
+  } else {
+    song.muted = true;
+    document.getElementById('muteButton').innerText = 'Unmute';
+  }
+}
+
+function update() {
+  if (!played) {
+    if (tillPlayed) {
+      song.currentTime = tillPlayed;
+      song.play();
+      played = true;
+    } else {
+      song.play();
+      played = true;
+    }
+  } else {
+    setCookie('timePlayed', song.currentTime);
+  }
+}
+
+document.addEventListener('keypress', function(event) {
+  if (event.key === 'f' || event.key === 'F') {
+    toggleMute();
+  }
+});
+
+setInterval(update, 1000);
