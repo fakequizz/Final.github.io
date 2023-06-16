@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Navbar Menu</title>
+	<title>RestoHub</title>
   <link rel="icon" href="../img/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     <div class="spinner"></div>
   </div>
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 50px ; margin-left: 150px; margin-right: 150px;margin-top: 20px;">
+  <nav id="myNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="../img/whitelogo.png" style="width: 100px; height: 75px;" alt="RestoHub Logo">
@@ -159,7 +159,20 @@
 <hr>
 <p style="text-align: center;">Order food through our website and get amazing offers. Generate your promocode to get 5% cashback on your next purchase.</p>
 <div class="buttochick" style="text-align: center;">
-  <button onclick="generatePromoCode()">Generate promocode</button>
+  <button class="btn btn-dark" onclick="generatePromoCode()" onmouseover="changeButtonColor(this)" onmouseout="restoreButtonColor(this)">Generate promocode</button>
+
+  <script>
+    function changeButtonColor(button) {
+      button.style.backgroundColor = 'purple';
+      button.style.color = 'white';
+    }
+    
+    function restoreButtonColor(button) {
+      button.style.backgroundColor = '';
+      button.style.color = '';
+    }
+  </script>
+  
   <p id="promoCode"></p>
   <button class="copy" onclick="copyPromoCode()">
     <span data-text-end="Copied!" data-text-initial="Copy to clipboard" class="tooltip"></span>

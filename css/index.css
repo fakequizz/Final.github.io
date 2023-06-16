@@ -230,14 +230,13 @@ button {
   position: absolute;
 }
 .footer {
-  border-radius: 50px;
+
   font-size: 14px;
   background-color: #1f1f24;
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
+ 
 }
 
 .footer .icon {
