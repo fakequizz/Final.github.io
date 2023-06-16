@@ -1,3 +1,16 @@
+ // Получение ссылки на элемент с помощью селектора
+ const myNav = document.getElementById('myNav');
+
+ // Привязка обработчика события mouseover с помощью метода
+ myNav.addEventListener('mouseover', function() {
+   myNav.classList.add('text-danger');
+ });
+
+ // Привязка обработчика события mouseout с помощью метода
+ myNav.addEventListener('mouseout', function() {
+   myNav.classList.remove('text-danger');
+ });
+
 function generatePromoCode() {
     var promoCodeElement = document.getElementById("promoCode");
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -30,7 +43,7 @@ function generatePromoCode() {
     var loader = document.getElementById("loader");
     setTimeout(function() {
       loader.style.display = "none";
-    }, 3000); // 7000 миллисекунд = 7 секунд
+    }, 200);
   });
   
   
