@@ -261,12 +261,14 @@ function displayProducts(products) {
       characteristics.textContent = product.characteristics.join(', ');
   
       const buyButton = document.createElement('button');
-      buyButton.classList.add('btn', 'btn-primary');
-      buyButton.textContent = 'Book';
-      buyButton.addEventListener('click', () => {
-        console.log('Buy button clicked for product:', product.name);
-      });
-  
+buyButton.classList.add('btn', 'btn-primary');
+buyButton.textContent = 'Book';
+buyButton.addEventListener('click', () => {
+  window.location.href = '../html/reg.html'; 
+});
+
+
+      document.body.appendChild(buyButton);
       cardBody.appendChild(title);
       cardBody.appendChild(characteristics);
       cardBody.appendChild(buyButton); 
@@ -298,21 +300,28 @@ function displayProducts(products) {
       }
     }
   }
-  
+
+  window.addEventListener("load", function() {
+    var loader = document.getElementById("loader");
+    setTimeout(function() {
+      loader.style.display = "none";
+    }, 200);
+  });
+
   var song = document.getElementsByTagName('audio')[0];
   var played = false;
   var tillPlayed = getCookie('timePlayed');
-  
+
   function toggleMute() {
     if (song.muted) {
       song.muted = false;
-      document.getElementById('muteButton').innerText = 'Mute';
+      document.getElementById('music-icon').classList.replace('bi-volume-mute', 'bi-volume-up');
     } else {
       song.muted = true;
-      document.getElementById('muteButton').innerText = 'Unmute';
+      document.getElementById('music-icon').classList.replace('bi-volume-up', 'bi-volume-mute');
     }
   }
-  
+
   function update() {
     if (!played) {
       if (tillPlayed) {
