@@ -1,3 +1,19 @@
+const temaOscuro = () => {
+  document.querySelector("body").setAttribute("data-bs-theme", "dark");
+  document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill");
+}
+
+const temaClaro = () => {
+  document.querySelector("body").setAttribute("data-bs-theme", "light");
+  document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
+}
+
+const cambiarTema = () => {
+  document.querySelector("body").getAttribute("data-bs-theme") === "light" ?
+  temaOscuro() : temaClaro() ;    
+}
+
+
 function validateForm() {
   let first_name = document.forms[0]["first_name"].value;
   let last_name = document.forms[0]["last_name"].value;
@@ -5,6 +21,13 @@ function validateForm() {
   let password = document.forms[0]["Password"].value;
   let Date_Of_Birth = document.forms[0]["Date_Of_Birth"].value;
   let confirmPassword = document.forms[0]["ConfirmPassword"].value;
+  
+  const termsCheckbox = document.querySelector('#terms-checkbox');
+
+  if (!termsCheckbox.checked) {
+    alert('Please agree to the terms and conditions.');
+    return false;
+  }
 
   if (!email.includes("@")) {
     alert("Please enter a valid email that includes @ at the beginning.");
@@ -39,8 +62,9 @@ function validateForm() {
     return false;
   }
 
-  alert("You submitted successfully!");
+  alert("You signed up successfully!");
 }
+
 
 
 function setCookie(c_name, value, exdays) {
@@ -99,3 +123,4 @@ document.addEventListener('keypress', function(event) {
 });
 
 setInterval(update, 1000);
+

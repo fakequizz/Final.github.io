@@ -1,3 +1,7 @@
+body {
+  font-family: 'Cinzel', serif;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -127,9 +131,6 @@
 
 
 
-body {
-  font-family: 'Cinzel', serif;
-}
 
 
 .navbar-collapse {
@@ -227,4 +228,8 @@ body {
 
 .footer .credits a {
   color: #fff;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Инвертирует цвет календаря */
 }
