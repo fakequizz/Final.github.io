@@ -2,15 +2,13 @@
 <html>
 <head>
 	<title>RestoHub</title>
-  <link rel="icon" href="../img/logo.png" type="image/png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@0,900;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -27,6 +25,10 @@
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <button id="muteButton" class="btn btn-dark btn-icon" onclick="toggleMute()">
+          <i id="music-icon" class="bi bi-volume-up"></i>
         </button>
     
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -271,6 +273,8 @@
   </div>
 
 </footer><!-- End Footer -->
+
+<audio preload="auto" src="../jazz/Dave_Lee_Billy_Strayhorn_-_Blood_Count_48403901.mp3" loop="true" autobuffer></audio>
 
 <script src="../js/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
