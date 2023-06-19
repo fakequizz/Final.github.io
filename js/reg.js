@@ -1,40 +1,45 @@
 function validateForm() {
-  let firstName = document.forms[0]["first_name"].value;
-  let lastName = document.forms[0]["last_name"].value;
-  let Email = document.forns[0] ["Email"]
-  let password = document.forms[0]["password"].value;
-  let birthDate = document.forms[0]["Date_Of_Birth"].value;
-  
-if (!Email.includes("@")) {
-  alert("Please enter valid emal, that includes @ at the begining")
-  return false;
-}
+  let first_name = document.forms[0]["first_name"].value;
+  let last_name = document.forms[0]["last_name"].value;
+  let email = document.forms[0]["email"].value;
+  let password = document.forms[0]["Password"].value;
+  let Date_Of_Birth = document.forms[0]["Date_Of_Birth"].value;
+  let confirmPassword = document.forms[0]["ConfirmPassword"].value;
 
-if (!password.match(/^[a-zA-Z]+$/)) {
-  alert("Password can only contain letters from a-z, A-Z, and numbers");
-  return false;
-}
+  if (!email.includes("@")) {
+    alert("Please enter a valid email that includes @ at the beginning.");
+    return false;
+  }
 
-if (!firstName.match(/^[a-zA-Z]+$/)) {
-  alert("First name can only contain letters from a-z.");
-  return false;
-}
+  if (!password.match(/^[a-zA-Z0-9]+$/)) {
+    alert("Password can only contain letters from a-z, A-Z, and numbers.");
+    return false;
+  }
 
+  if (password !== confirmPassword) {
+    alert("Confirm password must match the password.");
+    return false;
+  }
 
-if (!lastName.match(/^[a-zA-Z]+$/)) {
-  alert("Last name can only contain letters from a-z.");
-  return false;
-}
+  if (!first_name.match(/^[a-zA-Z]+$/)) {
+    alert("First name can only contain letters from a-z.");
+    return false;
+  }
 
-let today = new Date();
+  if (!last_name.match(/^[a-zA-Z]+$/)) {
+    alert("Last name can only contain letters from a-z.");
+    return false;
+  }
 
-let inputDate = new Date(birthDate);
-if (inputDate > today) {
-  alert("Please enter a valid birth date.");
-  return false;
-}
+  let today = new Date();
+  let inputDate = new Date(Date_Of_Birth.replace(/-/g, '/'));
 
-alert("You submitted Successfully!")
+  if (inputDate > today) {
+    alert("Please enter a valid birth date.");
+    return false;
+  }
+
+  alert("You submitted successfully!");
 }
 
 
