@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +86,7 @@
           <input type="password" name="ConfirmPassword" class="input" placeholder="Confirm Password"> <!-- Added Confirm Password -->
           <input type="email" name="email" class="input" placeholder="Email">
           <p>Date Of Birth</p>
-          <input type="date" name="Date_Of_Birth" class="input" placeholder="Date Of Birth">
+          <input type="date"  name="Date_Of_Birth" class="input">
           <input type="number" class="input" placeholder="Phone Number">
           <div>
             <p>I'm a:</p>
@@ -95,6 +96,8 @@
             <label>Female</label>
             <input type="radio" name="title_am" value="Arsen">
             <label>Other</label>
+            <label for="terms-checkbox">I agree to the <a href="https://www.pdsglobal.com/wp-content/uploads/2021/12/Terms-and-Conditions-of-Trade-Intnl.pdf">Terms and Conditions</a></label>
+            <input type="checkbox" id="terms-checkbox" name="terms" required>
           </div>
           <button class="btn">Sign up</button>
           <span class="switch">Already have an account? 
@@ -105,6 +108,8 @@
         </div>
       </form>
     </div>
+
+
     <!--footer-->
     <footer id="footer" class="footer" style="background-color: #212529;">
       <div class="container">
@@ -166,7 +171,8 @@
 
     <audio preload="auto" src="../jazz/Dave_Lee_Billy_Strayhorn_-_Blood_Count_48403901.mp3" loop="true" autobuffer>
     </audio>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="../js/reg.js"></script>
     </body>
 </html>
