@@ -462,3 +462,9 @@ section{
     opacity: 1;
   }
 }
+
+/* Add this CSS class to change the background color */
+.dark-theme {
+  background-color: #000000; /* Update with your desired background color */
+  color: #ffffff; /* Update with your desired text color */
+}
