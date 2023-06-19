@@ -24,6 +24,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <button id="muteButton" class="btn btn-dark btn-icon" onclick="toggleMute()">
+              <i id="music-icon" class="bi bi-volume-up"></i>
+            </button>
         
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
@@ -38,7 +42,6 @@
                     </li>
                     
                     <li>
-                      <button id="muteButton" class="btn-dark" style="margin-top: 10%;" onclick="toggleMute()">Mute/Unmute</button>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -73,13 +76,14 @@
           </div>
           <div class="form_back">
               <div class="form_details">SignUp</div>
-              <input type="text" class="input" placeholder="Firstname">
-              <input type="text" class="input" placeholder="Username">
-              <input type="password" class="input" placeholder="Password">
+              <input type="text" name="first_name" class="input" placeholder="First Name">
+              <input type="text" name="last_name" class="input" placeholder="Last Name">
+              <input type="text" name="Username" class="input" placeholder="Username">
+              <input type="password" name="Password" class="input" placeholder="Password">
               <input type="password" class="input" placeholder="Confirm Password">
-              <input type="email" class="input" placeholder="Email">
+              <input type="email" name="Username" class="input" placeholder="Email">
              <p>Date Of Birth</p>
-              <input type="date" class="input" placeholder="Date Of Birth">
+              <input type="date" name="Date_Of_Birth" class="input" placeholder="Date Of Birth">
               <input type="number" class="input" placeholder="Phone Number">
               <div>
               <p>I'm a:</p>

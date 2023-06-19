@@ -10,7 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
 </head>
-  <body data-bs-theme="light">    
+  <body data-bs-theme="light">
+
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    
     <!-- Header and Navbar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -23,8 +28,14 @@
 
         <button onclick="cambiarTema()" class="btn rounded-fill">
           <i id="dl-icon" class="bi bi-moon-fill"></i>
+          
+          <button id="muteButton" class="btn btn-dark btn-icon" onclick="toggleMute()">
+            <i id="music-icon" class="bi bi-volume-up"></i>
+          </button>
+          </button>
+          
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -156,6 +167,8 @@
   
        </footer>
     <!-- End Footer -->
+
+    <audio preload="auto" src="../jazz/Dave_Lee_Billy_Strayhorn_-_Blood_Count_48403901.mp3" loop="true" autobuffer></audio>
      
   <script src="../js/list.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
