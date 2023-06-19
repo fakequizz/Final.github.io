@@ -84,3 +84,4 @@ document.addEventListener('keypress', function(event) {
 });
 
 setInterval(update, 1000);
+
