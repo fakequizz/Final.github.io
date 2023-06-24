@@ -49,7 +49,7 @@ const products = [
     { 
       name: 'Once',
       category: 'europa',
-      image: '../img/kitchen/European/Once.jpg',
+      image: '../img/kitchen/European/once.jpg',
       characteristics: ['Addres: \u200B \u200B \u200B \u200B \u200B \u200B \u200B \u200B  \u200B \u200B \u200B Turan 24, Working hours:\u200B \u200B \u200B 12:00 - 02:00,\u200B \u200B \u200B \u200B \u200B \u200B \u200B \u200B \u200B \u200B  A/B: \u200B \u200B32$']
     },
     
